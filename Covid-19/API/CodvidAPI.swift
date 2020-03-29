@@ -8,6 +8,8 @@
 
 import Foundation
 
-protocol CovidAPI {
-    
+struct CovidAPI {
+    static let globalData = Resource<GlobalDataDTO>(get: URL(string: "https://corona.lmao.ninja/all")!)
 }
+
+
