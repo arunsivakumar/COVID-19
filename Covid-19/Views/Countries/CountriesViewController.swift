@@ -11,6 +11,7 @@ import UIKit
 class CountriesViewController: UIViewController {
     
     var store: CovidStore!
+    var dataSource: CountriesDataSource?
     
     @IBOutlet weak var tableView: UITableView!
     override func viewDidLoad() {
@@ -22,6 +23,9 @@ class CountriesViewController: UIViewController {
     
     private func setupUI() {
         self.navigationItem.title = "Countries"
+        tableView.estimatedRowHeight = 300.0
+        tableView.rowHeight = UITableView.automaticDimension
+        
     }
     private func loadData() {
         store.getCountriesData { [weak self] (result) in
@@ -35,5 +39,8 @@ class CountriesViewController: UIViewController {
     
     private func updateUI(data: [CountryDataDTO]) {
         //update table view
+        dataSource = CountriesDataSource(countries: data)
+        tableView.dataSource = dataSource!
+        tableView.reloadData()
     }
 }

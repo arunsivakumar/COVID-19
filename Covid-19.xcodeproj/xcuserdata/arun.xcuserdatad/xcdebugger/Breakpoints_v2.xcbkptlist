@@ -3,4 +3,86 @@
    uuid = "F46AD71B-1BF4-494C-8DEF-D3FC8FCDF28F"
    type = "1"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "63BD454D-96B8-4C73-93D5-5A6B238EBA21"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Covid-19/Views/Countries/CountriesViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "34"
+            endingLineNumber = "34"
+            landmarkName = "loadData()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "63BD454D-96B8-4C73-93D5-5A6B238EBA21 - 34025bef5b2f2e26"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;Swift.Array&lt;Covid_19.CountryDataDTO&gt;, Swift.Error&gt;) -&gt; () in Covid_19.CountriesViewController.(loadData in _F43474629EB0C592699238A51AEFE725)() -&gt; ()"
+                  moduleName = "Covid-19"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/arun/Documents/Github/Covid-19/Covid-19/Views/Countries/CountriesViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "33"
+                  endingLineNumber = "33"
+                  offsetFromSymbolStart = "337">
+               </Location>
+               <Location
+                  uuid = "63BD454D-96B8-4C73-93D5-5A6B238EBA21 - 34025bef5b2f2e26"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;Swift.Array&lt;Covid_19.CountryDataDTO&gt;, Swift.Error&gt;) -&gt; () in Covid_19.CountriesViewController.(loadData in _F43474629EB0C592699238A51AEFE725)() -&gt; ()"
+                  moduleName = "Covid-19"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/arun/Documents/Github/Covid-19/Covid-19/Views/Countries/CountriesViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "33"
+                  endingLineNumber = "33"
+                  offsetFromSymbolStart = "359">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "3F33C9AA-CBC0-4683-BCC3-006BA3EE7194"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Covid-19/Views/Countries/CountriesViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "35"
+            endingLineNumber = "35"
+            landmarkName = "loadData()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "5BA43D60-A0BB-40FC-A0E2-B389CF64F6B3"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Covid-19/Views/Countries/CountriesDataSource.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "18"
+            endingLineNumber = "18"
+            landmarkName = "init(countries:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>

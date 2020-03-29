@@ -49,7 +49,7 @@ extension Resource where A: Decodable {
         self.parse = { data in
             let str = String(decoding: data, as: UTF8.self)
             print("data: \(str)")
-            return try? JSONDecoder().decode(A.self, from: data)
+            return try! JSONDecoder().decode(A.self, from: data)
         }
     }
     

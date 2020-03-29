@@ -11,6 +11,9 @@
 		F406DFE7243135170085D492 /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = F406DFE6243135170085D492 /* Networking.swift */; };
 		F406DFEA24313EB30085D492 /* GlobalDataDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = F406DFE924313EB30085D492 /* GlobalDataDTO.swift */; };
 		F406DFEC243149490085D492 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F406DFEB243149490085D492 /* Extensions.swift */; };
+		F406DFEE24314EE40085D492 /* CountriesDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = F406DFED24314EE40085D492 /* CountriesDataSource.swift */; };
+		F406DFF024314F110085D492 /* CountryDataDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = F406DFEF24314F110085D492 /* CountryDataDTO.swift */; };
+		F406DFF224314F600085D492 /* ContryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F406DFF124314F600085D492 /* ContryTableViewCell.swift */; };
 		F4BD9BC12431253C00671CAA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4BD9BC02431253C00671CAA /* AppDelegate.swift */; };
 		F4BD9BC52431253C00671CAA /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4BD9BC42431253C00671CAA /* HomeViewController.swift */; };
 		F4BD9BC82431253C00671CAA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4BD9BC62431253C00671CAA /* Main.storyboard */; };
@@ -47,6 +50,9 @@
 		F406DFE6243135170085D492 /* Networking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
 		F406DFE924313EB30085D492 /* GlobalDataDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalDataDTO.swift; sourceTree = "<group>"; };
 		F406DFEB243149490085D492 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		F406DFED24314EE40085D492 /* CountriesDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountriesDataSource.swift; sourceTree = "<group>"; };
+		F406DFEF24314F110085D492 /* CountryDataDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryDataDTO.swift; sourceTree = "<group>"; };
+		F406DFF124314F600085D492 /* ContryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContryTableViewCell.swift; sourceTree = "<group>"; };
 		F4BD9BBD2431253C00671CAA /* Covid-19.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Covid-19.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4BD9BC02431253C00671CAA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F4BD9BC42431253C00671CAA /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -187,6 +193,7 @@
 			isa = PBXGroup;
 			children = (
 				F406DFE924313EB30085D492 /* GlobalDataDTO.swift */,
+				F406DFEF24314F110085D492 /* CountryDataDTO.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -212,6 +219,8 @@
 			isa = PBXGroup;
 			children = (
 				F406DFE424312FDE0085D492 /* CountriesViewController.swift */,
+				F406DFED24314EE40085D492 /* CountriesDataSource.swift */,
+				F406DFF124314F600085D492 /* ContryTableViewCell.swift */,
 			);
 			path = Countries;
 			sourceTree = "<group>";
@@ -367,9 +376,12 @@
 				F4BD9BF3243128F200671CAA /* TabBarController.swift in Sources */,
 				F4BD9BF4243128F200671CAA /* NavigationController.swift in Sources */,
 				F406DFE7243135170085D492 /* Networking.swift in Sources */,
+				F406DFF024314F110085D492 /* CountryDataDTO.swift in Sources */,
 				F406DFE524312FDE0085D492 /* CountriesViewController.swift in Sources */,
+				F406DFF224314F600085D492 /* ContryTableViewCell.swift in Sources */,
 				F4BD9BC52431253C00671CAA /* HomeViewController.swift in Sources */,
 				F406DFEA24313EB30085D492 /* GlobalDataDTO.swift in Sources */,
+				F406DFEE24314EE40085D492 /* CountriesDataSource.swift in Sources */,
 				F4BD9BC12431253C00671CAA /* AppDelegate.swift in Sources */,
 				F4BD9C0424312B9400671CAA /* CodvidAPI.swift in Sources */,
 				F406DFEC243149490085D492 /* Extensions.swift in Sources */,
