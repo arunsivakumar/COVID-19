@@ -13,8 +13,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        let sb = UIStoryboard(name: "Main", bundle: nil)
+        let tbc = sb.instantiateViewController(withIdentifier: "TabBarController") as! TabBarController
+        self.window = UIWindow(frame: UIScreen.main.bounds)
+        self.window?.rootViewController = tbc
+        self.window?.makeKeyAndVisible()
+        if let vc = UIApplication.topViewController() as? HomeViewController {
+             vc.store = CovidStoreImplementation()
+        }
         return true
     }
 }
-
