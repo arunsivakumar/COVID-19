@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F406DFE524312FDE0085D492 /* CountriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F406DFE424312FDE0085D492 /* CountriesViewController.swift */; };
+		F406DFE7243135170085D492 /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = F406DFE6243135170085D492 /* Networking.swift */; };
+		F406DFEA24313EB30085D492 /* GlobalDataDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = F406DFE924313EB30085D492 /* GlobalDataDTO.swift */; };
+		F406DFEC243149490085D492 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F406DFEB243149490085D492 /* Extensions.swift */; };
 		F4BD9BC12431253C00671CAA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4BD9BC02431253C00671CAA /* AppDelegate.swift */; };
 		F4BD9BC52431253C00671CAA /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4BD9BC42431253C00671CAA /* HomeViewController.swift */; };
 		F4BD9BC82431253C00671CAA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4BD9BC62431253C00671CAA /* Main.storyboard */; };
@@ -39,6 +43,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F406DFE424312FDE0085D492 /* CountriesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountriesViewController.swift; sourceTree = "<group>"; };
+		F406DFE6243135170085D492 /* Networking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
+		F406DFE924313EB30085D492 /* GlobalDataDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalDataDTO.swift; sourceTree = "<group>"; };
+		F406DFEB243149490085D492 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		F4BD9BBD2431253C00671CAA /* Covid-19.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Covid-19.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4BD9BC02431253C00671CAA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F4BD9BC42431253C00671CAA /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -84,6 +92,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F406DFE82431351C0085D492 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				F406DFE6243135170085D492 /* Networking.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
 		F4BD9BB42431253C00671CAA = {
 			isa = PBXGroup;
 			children = (
@@ -107,6 +123,7 @@
 		F4BD9BBF2431253C00671CAA /* Covid-19 */ = {
 			isa = PBXGroup;
 			children = (
+				F406DFE82431351C0085D492 /* Networking */,
 				F4BD9BF02431288600671CAA /* Classes */,
 				F4BD9BFB24312AAD00671CAA /* Models */,
 				F4BD9C0224312B5300671CAA /* API */,
@@ -145,6 +162,7 @@
 			children = (
 				F4BD9BF2243128F200671CAA /* NavigationController.swift */,
 				F4BD9BF1243128F200671CAA /* TabBarController.swift */,
+				F406DFEB243149490085D492 /* Extensions.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -168,6 +186,7 @@
 		F4BD9BFB24312AAD00671CAA /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				F406DFE924313EB30085D492 /* GlobalDataDTO.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -192,6 +211,7 @@
 		F4BD9BFF24312B1E00671CAA /* Countries */ = {
 			isa = PBXGroup;
 			children = (
+				F406DFE424312FDE0085D492 /* CountriesViewController.swift */,
 			);
 			path = Countries;
 			sourceTree = "<group>";
@@ -346,9 +366,13 @@
 				F4BD9BF92431290C00671CAA /* Constants.swift in Sources */,
 				F4BD9BF3243128F200671CAA /* TabBarController.swift in Sources */,
 				F4BD9BF4243128F200671CAA /* NavigationController.swift in Sources */,
+				F406DFE7243135170085D492 /* Networking.swift in Sources */,
+				F406DFE524312FDE0085D492 /* CountriesViewController.swift in Sources */,
 				F4BD9BC52431253C00671CAA /* HomeViewController.swift in Sources */,
+				F406DFEA24313EB30085D492 /* GlobalDataDTO.swift in Sources */,
 				F4BD9BC12431253C00671CAA /* AppDelegate.swift in Sources */,
 				F4BD9C0424312B9400671CAA /* CodvidAPI.swift in Sources */,
+				F406DFEC243149490085D492 /* Extensions.swift in Sources */,
 				F4BD9C0124312B4B00671CAA /* CovidStore.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
