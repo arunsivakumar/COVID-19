@@ -14,15 +14,28 @@ enum CustomError: Error {
 }
 
 typealias GlobalDataCompletion =  (Result<GlobalDataDTO, Error>) -> Void
+typealias CountriesDataCompletion =  (Result<[CountryDataDTO], Error>) -> Void
+
 
 protocol CovidStore {
     func getGlobalData(completion: @escaping GlobalDataCompletion)
+    func getCountriesData(completion: @escaping CountriesDataCompletion)
 }
 
 class CovidStoreImplementation: CovidStore {
     
     func getGlobalData(completion: @escaping GlobalDataCompletion) {
         URLSession.shared.load(CovidAPI.globalData) { (data) in
+            if let data = data {
+                completion(.success(data))
+            } else {
+                completion(.failure(CustomError.networking))
+            }
+        }
+    }
+    
+    func getCountriesData(completion: @escaping CountriesDataCompletion) {
+        URLSession.shared.load(CovidAPI.countriesData) { (data) in
             if let data = data {
                 completion(.success(data))
             } else {

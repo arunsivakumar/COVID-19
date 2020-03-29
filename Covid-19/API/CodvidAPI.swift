@@ -10,6 +10,8 @@ import Foundation
 
 struct CovidAPI {
     static let globalData = Resource<GlobalDataDTO>(get: URL(string: "https://corona.lmao.ninja/all")!)
+    static let countriesData = Resource<[CountryDataDTO]>(get: URL(string: "https://corona.lmao.ninja/countries")!)
+
 }
 
 
