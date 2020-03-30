@@ -44,3 +44,12 @@ extension UIView {
         self.clipsToBounds = true
     }
 }
+
+extension UITableView {
+    func setDefaults(){
+        self.tableFooterView = UIView()
+        self.showsVerticalScrollIndicator = false
+        self.showsHorizontalScrollIndicator = false
+        self.alwaysBounceVertical = true
+    }
+}

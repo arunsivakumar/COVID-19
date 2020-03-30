@@ -36,6 +36,7 @@ class CountriesDataSource: NSObject, UITableViewDataSource{
                 cell.flag.image = image
             }
         }
+        cell.selectionStyle = .none
         return cell
     }
 }
