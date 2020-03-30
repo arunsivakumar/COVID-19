@@ -19,7 +19,10 @@ class CountriesViewController: UIViewController, UISearchResultsUpdating {
         super.viewDidLoad()
         store = CovidStoreImplementation()
         setupUI()
-        loadData()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+            loadData()
     }
     
     private func setupUI() {

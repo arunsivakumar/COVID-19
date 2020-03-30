@@ -24,7 +24,10 @@ class HomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
-        loadData()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+         loadData()
     }
     
     private func setupUI() {
