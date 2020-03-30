@@ -16,4 +16,6 @@ struct Constants {
     static let defaultFontSizeNavigation:CGFloat = 18
     
     static let emptyData = "-"
+    
+    static let corner:CGFloat = 12.0
 }

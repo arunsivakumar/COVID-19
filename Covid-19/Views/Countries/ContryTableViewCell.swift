@@ -40,7 +40,7 @@ class CountryTableViewCell: UITableViewCell {
     }
     
     private func setupUI() {
-        flag.makeRoundedCorner()
+        flag.roundedCorner()
         containerView.setupShadow()
     }
     

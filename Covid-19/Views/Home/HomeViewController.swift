@@ -12,6 +12,10 @@ class HomeViewController: UIViewController {
     
     var store: CovidStore!
     
+    @IBOutlet weak var activeView: UIView!
+    @IBOutlet weak var recoveredView: UIView!
+    @IBOutlet weak var deathsView: UIView!
+    @IBOutlet weak var casesView: UIView!
     @IBOutlet weak var totalLabel: UILabel!
     @IBOutlet weak var deathsLabel: UILabel!
     @IBOutlet weak var recoveredLabel: UILabel!
@@ -25,6 +29,10 @@ class HomeViewController: UIViewController {
     
     private func setupUI() {
         self.navigationItem.title = "Home"
+        activeView.roundedCorner(with: Constants.corner)
+        recoveredView.roundedCorner(with: Constants.corner)
+        deathsView.roundedCorner(with: Constants.corner)
+        casesView.roundedCorner(with: Constants.corner)
     }
     
     private func loadData() {
