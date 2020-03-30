@@ -34,6 +34,10 @@
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="303"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="R03-4G-rFf">
+                                                    <rect key="frame" x="20" y="3" width="374" height="295"/>
+                                                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                </view>
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="gg7-yf-dDG">
                                                     <rect key="frame" x="36" y="15" width="342" height="273"/>
                                                     <subviews>
@@ -59,7 +63,7 @@
                                                                 <constraint firstItem="PML-Zk-Go2" firstAttribute="centerY" secondItem="fdb-BS-Oyk" secondAttribute="centerY" id="YWT-8W-ly9"/>
                                                             </constraints>
                                                         </stackView>
-                                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="YAO-mv-Anb">
+                                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="YAO-mv-Anb">
                                                             <rect key="frame" x="0.0" y="38" width="342" height="235"/>
                                                             <subviews>
                                                                 <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="fXf-zM-TFC">
@@ -223,8 +227,12 @@
                                             <constraints>
                                                 <constraint firstAttribute="trailingMargin" secondItem="gg7-yf-dDG" secondAttribute="trailing" constant="16" id="PBq-XI-D5H"/>
                                                 <constraint firstItem="gg7-yf-dDG" firstAttribute="leading" secondItem="aPH-i9-Klw" secondAttribute="leadingMargin" constant="16" id="Q94-nE-9w2"/>
+                                                <constraint firstItem="R03-4G-rFf" firstAttribute="top" secondItem="aPH-i9-Klw" secondAttribute="top" constant="3" id="TFe-uB-ua2"/>
                                                 <constraint firstItem="gg7-yf-dDG" firstAttribute="centerY" secondItem="aPH-i9-Klw" secondAttribute="centerY" id="XbI-Uc-PoO"/>
+                                                <constraint firstAttribute="bottom" secondItem="R03-4G-rFf" secondAttribute="bottom" constant="5" id="fMo-n9-2g0"/>
+                                                <constraint firstItem="R03-4G-rFf" firstAttribute="centerX" secondItem="gg7-yf-dDG" secondAttribute="centerX" id="mfo-Cw-Yst"/>
                                                 <constraint firstItem="gg7-yf-dDG" firstAttribute="top" secondItem="aPH-i9-Klw" secondAttribute="topMargin" constant="4" id="ngK-7b-OGP"/>
+                                                <constraint firstItem="R03-4G-rFf" firstAttribute="leading" secondItem="aPH-i9-Klw" secondAttribute="leadingMargin" id="tiu-Jr-cpP"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
@@ -232,6 +240,7 @@
                                             <outlet property="cases" destination="w9y-2o-qfa" id="MDs-Yl-HBH"/>
                                             <outlet property="casesPerOneMillion" destination="gvO-CS-Quw" id="BQH-yw-PZM"/>
                                             <outlet property="casesToday" destination="ilL-uo-8PL" id="HMd-B9-qwp"/>
+                                            <outlet property="containerView" destination="R03-4G-rFf" id="sWb-in-izk"/>
                                             <outlet property="countryLabel" destination="fdb-BS-Oyk" id="pBo-xd-8BG"/>
                                             <outlet property="critical" destination="Gti-w4-SBo" id="UwF-Wv-11l"/>
                                             <outlet property="deaths" destination="heb-6P-7t1" id="Nkc-qu-Hef"/>

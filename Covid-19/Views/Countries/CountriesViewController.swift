@@ -24,9 +24,9 @@ class CountriesViewController: UIViewController {
     private func setupUI() {
         self.navigationItem.title = "Countries"
         tableView.setDefaults()
-        tableView.estimatedRowHeight = 300.0
+        tableView.estimatedRowHeight = 306.0
         tableView.rowHeight = UITableView.automaticDimension
-        
+        tableView.separatorStyle = .none
     }
     private func loadData() {
         store.getCountriesData { [weak self] (result) in

@@ -12,6 +12,7 @@ class CountryTableViewCell: UITableViewCell {
     
      //MARK:- Outlets
     
+    @IBOutlet weak var containerView: UIView!
     @IBOutlet weak var countryLabel: UILabel!
     @IBOutlet weak var flag: UIImageView!
     @IBOutlet weak var cases: UILabel!
@@ -40,6 +41,12 @@ class CountryTableViewCell: UITableViewCell {
     
     private func setupUI() {
         flag.makeRoundedCorner()
+        containerView.setupShadow()
+    }
+    
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        contentView.frame = contentView.frame.inset(by: UIEdgeInsets(top: 8, left: 8, bottom: 8, right: 8))
     }
     
     private func resetUI() {

@@ -31,7 +31,7 @@ class CountriesDataSource: NSObject, UITableViewDataSource{
         let country = countries[indexPath.row]
         cell.country = country
         if let flag = country.countryInfo?.flag {
-            photoStore.fetchImage(for: flag) { [weak self] (result) in
+            photoStore.fetchImage(for: flag) { (result) in
                 guard case let .success(image) = result else { return }
                 cell.flag.image = image
             }
