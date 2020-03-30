@@ -14,6 +14,8 @@
 		F406DFEE24314EE40085D492 /* CountriesDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = F406DFED24314EE40085D492 /* CountriesDataSource.swift */; };
 		F406DFF024314F110085D492 /* CountryDataDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = F406DFEF24314F110085D492 /* CountryDataDTO.swift */; };
 		F406DFF224314F600085D492 /* ContryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F406DFF124314F600085D492 /* ContryTableViewCell.swift */; };
+		F406DFF424316D110085D492 /* ImageStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = F406DFF324316D110085D492 /* ImageStore.swift */; };
+		F406DFF724316F950085D492 /* PhotoStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = F406DFF624316F950085D492 /* PhotoStore.swift */; };
 		F4BD9BC12431253C00671CAA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4BD9BC02431253C00671CAA /* AppDelegate.swift */; };
 		F4BD9BC52431253C00671CAA /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4BD9BC42431253C00671CAA /* HomeViewController.swift */; };
 		F4BD9BC82431253C00671CAA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4BD9BC62431253C00671CAA /* Main.storyboard */; };
@@ -53,6 +55,8 @@
 		F406DFED24314EE40085D492 /* CountriesDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountriesDataSource.swift; sourceTree = "<group>"; };
 		F406DFEF24314F110085D492 /* CountryDataDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryDataDTO.swift; sourceTree = "<group>"; };
 		F406DFF124314F600085D492 /* ContryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContryTableViewCell.swift; sourceTree = "<group>"; };
+		F406DFF324316D110085D492 /* ImageStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageStore.swift; sourceTree = "<group>"; };
+		F406DFF624316F950085D492 /* PhotoStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoStore.swift; sourceTree = "<group>"; };
 		F4BD9BBD2431253C00671CAA /* Covid-19.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Covid-19.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4BD9BC02431253C00671CAA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F4BD9BC42431253C00671CAA /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -106,6 +110,14 @@
 			path = Networking;
 			sourceTree = "<group>";
 		};
+		F406DFF524316D150085D492 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				F406DFF324316D110085D492 /* ImageStore.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		F4BD9BB42431253C00671CAA = {
 			isa = PBXGroup;
 			children = (
@@ -129,6 +141,7 @@
 		F4BD9BBF2431253C00671CAA /* Covid-19 */ = {
 			isa = PBXGroup;
 			children = (
+				F406DFF524316D150085D492 /* Helpers */,
 				F406DFE82431351C0085D492 /* Networking */,
 				F4BD9BF02431288600671CAA /* Classes */,
 				F4BD9BFB24312AAD00671CAA /* Models */,
@@ -185,6 +198,7 @@
 			isa = PBXGroup;
 			children = (
 				F4BD9C0024312B4B00671CAA /* CovidStore.swift */,
+				F406DFF624316F950085D492 /* PhotoStore.swift */,
 			);
 			path = Store;
 			sourceTree = "<group>";
@@ -374,12 +388,14 @@
 			files = (
 				F4BD9BF92431290C00671CAA /* Constants.swift in Sources */,
 				F4BD9BF3243128F200671CAA /* TabBarController.swift in Sources */,
+				F406DFF724316F950085D492 /* PhotoStore.swift in Sources */,
 				F4BD9BF4243128F200671CAA /* NavigationController.swift in Sources */,
 				F406DFE7243135170085D492 /* Networking.swift in Sources */,
 				F406DFF024314F110085D492 /* CountryDataDTO.swift in Sources */,
 				F406DFE524312FDE0085D492 /* CountriesViewController.swift in Sources */,
 				F406DFF224314F600085D492 /* ContryTableViewCell.swift in Sources */,
 				F4BD9BC52431253C00671CAA /* HomeViewController.swift in Sources */,
+				F406DFF424316D110085D492 /* ImageStore.swift in Sources */,
 				F406DFEA24313EB30085D492 /* GlobalDataDTO.swift in Sources */,
 				F406DFEE24314EE40085D492 /* CountriesDataSource.swift in Sources */,
 				F4BD9BC12431253C00671CAA /* AppDelegate.swift in Sources */,

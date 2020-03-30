@@ -37,3 +37,10 @@ extension Int {
         return numberFormatter.string(from: NSNumber(value:self))!
     }
 }
+
+extension UIView {
+    func makeRoundedCorner() {
+        self.layer.cornerRadius = self.frame.size.height / 2
+        self.clipsToBounds = true
+    }
+}

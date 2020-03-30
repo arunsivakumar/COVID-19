@@ -39,7 +39,7 @@ class CountriesViewController: UIViewController {
     
     private func updateUI(data: [CountryDataDTO]) {
         //update table view
-        dataSource = CountriesDataSource(countries: data)
+        dataSource = CountriesDataSource(countries: data, photoStore: PhotoStore())
         tableView.dataSource = dataSource!
         tableView.reloadData()
     }

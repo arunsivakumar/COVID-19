@@ -13,12 +13,14 @@ class CountriesDataSource: NSObject, UITableViewDataSource{
     //MARK:- Public API
     
     let countries: [CountryDataDTO]
+    let photoStore: PhotoStore
     
-    init(countries: [CountryDataDTO]) {
+    init(countries: [CountryDataDTO], photoStore: PhotoStore) {
         self.countries = countries
+        self.photoStore = photoStore
     }
     
-      //MARK:- DataSource
+    //MARK:- DataSource
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return countries.count
@@ -26,7 +28,14 @@ class CountriesDataSource: NSObject, UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "CountryTableViewCell", for: indexPath)  as! CountryTableViewCell
-        cell.country = countries[indexPath.row]
+        let country = countries[indexPath.row]
+        cell.country = country
+        if let flag = country.countryInfo?.flag {
+            photoStore.fetchImage(for: flag) { [weak self] (result) in
+                guard case let .success(image) = result else { return }
+                cell.flag.image = image
+            }
+        }
         return cell
     }
 }

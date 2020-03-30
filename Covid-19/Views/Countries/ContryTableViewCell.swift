@@ -30,11 +30,16 @@ class CountryTableViewCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
+        setupUI()
         resetUI()
     }
     
     override func prepareForReuse() {
         resetUI()
+    }
+    
+    private func setupUI() {
+        flag.makeRoundedCorner()
     }
     
     private func resetUI() {
