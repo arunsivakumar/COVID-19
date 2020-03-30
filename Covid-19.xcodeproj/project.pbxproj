@@ -16,6 +16,7 @@
 		F406DFF224314F600085D492 /* ContryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F406DFF124314F600085D492 /* ContryTableViewCell.swift */; };
 		F406DFF424316D110085D492 /* ImageStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = F406DFF324316D110085D492 /* ImageStore.swift */; };
 		F406DFF724316F950085D492 /* PhotoStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = F406DFF624316F950085D492 /* PhotoStore.swift */; };
+		F406DFF924319FBB0085D492 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F406DFF824319FBB0085D492 /* AboutViewController.swift */; };
 		F4BD9BC12431253C00671CAA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4BD9BC02431253C00671CAA /* AppDelegate.swift */; };
 		F4BD9BC52431253C00671CAA /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4BD9BC42431253C00671CAA /* HomeViewController.swift */; };
 		F4BD9BC82431253C00671CAA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4BD9BC62431253C00671CAA /* Main.storyboard */; };
@@ -57,6 +58,7 @@
 		F406DFF124314F600085D492 /* ContryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContryTableViewCell.swift; sourceTree = "<group>"; };
 		F406DFF324316D110085D492 /* ImageStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageStore.swift; sourceTree = "<group>"; };
 		F406DFF624316F950085D492 /* PhotoStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoStore.swift; sourceTree = "<group>"; };
+		F406DFF824319FBB0085D492 /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
 		F4BD9BBD2431253C00671CAA /* Covid-19.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Covid-19.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4BD9BC02431253C00671CAA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F4BD9BC42431253C00671CAA /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -116,6 +118,14 @@
 				F406DFF324316D110085D492 /* ImageStore.swift */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		F406DFFA24319FBE0085D492 /* About */ = {
+			isa = PBXGroup;
+			children = (
+				F406DFF824319FBB0085D492 /* AboutViewController.swift */,
+			);
+			path = About;
 			sourceTree = "<group>";
 		};
 		F4BD9BB42431253C00671CAA = {
@@ -217,6 +227,7 @@
 			children = (
 				F4BD9BFE24312B0900671CAA /* Home */,
 				F4BD9BFF24312B1E00671CAA /* Countries */,
+				F406DFFA24319FBE0085D492 /* About */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -401,6 +412,7 @@
 				F4BD9BC12431253C00671CAA /* AppDelegate.swift in Sources */,
 				F4BD9C0424312B9400671CAA /* CodvidAPI.swift in Sources */,
 				F406DFEC243149490085D492 /* Extensions.swift in Sources */,
+				F406DFF924319FBB0085D492 /* AboutViewController.swift in Sources */,
 				F4BD9C0124312B4B00671CAA /* CovidStore.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

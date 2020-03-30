@@ -264,34 +264,61 @@
             </objects>
             <point key="canvasLocation" x="468.11594202898556" y="226.33928571428569"/>
         </scene>
-        <!--View Controller-->
+        <!--About View Controller-->
         <scene sceneID="t9R-Gf-QYi">
             <objects>
-                <viewController id="KRP-xp-Wer" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="AboutViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="KRP-xp-Wer" customClass="AboutViewController" customModule="Covid_19" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="pTe-ME-E0h">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="This app doesnt not store any user data" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yne-LQ-G8m">
-                                <rect key="frame" x="62" y="372" width="304" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="37" translatesAutoresizingMaskIntoConstraints="NO" id="lzf-MD-u8S">
+                                <rect key="frame" x="57.5" y="366" width="299" height="164"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zxp-1V-4eK">
+                                        <rect key="frame" x="0.0" y="0.0" width="299" height="30"/>
+                                        <state key="normal" title="API used: https://github.com/novelcovid/api"/>
+                                        <connections>
+                                            <action selector="openAPILink:" destination="KRP-xp-Wer" eventType="touchUpInside" id="9gs-gd-OHN"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eey-kT-G2r">
+                                        <rect key="frame" x="102" y="67" width="95" height="30"/>
+                                        <state key="normal" title="Privacy Policy"/>
+                                        <connections>
+                                            <action selector="openPrivacyPolicy:" destination="KRP-xp-Wer" eventType="touchUpInside" id="ypv-ej-Tqw"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fvk-VE-niU">
+                                        <rect key="frame" x="82" y="134" width="135" height="30"/>
+                                        <state key="normal" title="Terms &amp; Conditions"/>
+                                        <connections>
+                                            <action selector="openTermsAndConditions:" destination="KRP-xp-Wer" eventType="touchUpInside" id="s5P-7w-UdS"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="About" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Egg-dC-Lvs">
+                                <rect key="frame" x="153" y="147" width="109" height="51"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="42"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zxp-1V-4eK">
-                                <rect key="frame" x="84" y="418" width="261" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="API: https://github.com/novelcovid/api"/>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Egg-dC-Lvs" firstAttribute="centerX" secondItem="lzf-MD-u8S" secondAttribute="centerX" id="5L0-ip-jSz"/>
+                            <constraint firstItem="lzf-MD-u8S" firstAttribute="centerX" secondItem="pTe-ME-E0h" secondAttribute="centerX" id="Z6V-Sm-JMJ"/>
+                            <constraint firstItem="Egg-dC-Lvs" firstAttribute="top" secondItem="UKr-YR-boU" secondAttribute="top" constant="59" id="sg5-qp-4Qp"/>
+                            <constraint firstItem="lzf-MD-u8S" firstAttribute="centerY" secondItem="pTe-ME-E0h" secondAttribute="centerY" id="yt2-Gy-byl"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="UKr-YR-boU"/>
                     </view>
+                    <navigationItem key="navigationItem" id="DOv-h1-Pjz"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rnO-Da-e7I" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="468" y="934"/>
+            <point key="canvasLocation" x="468" y="928"/>
         </scene>
         <!--Home View Controller-->
         <scene sceneID="Ras-ek-NKv">
@@ -453,6 +480,7 @@
         <scene sceneID="Znp-sV-m7U">
             <objects>
                 <tabBarController storyboardIdentifier="TabBarController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="rM6-Po-H0P" customClass="TabBarController" customModule="Covid_19" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="YNw-8L-EFt"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="vfp-rQ-t2H">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -461,6 +489,7 @@
                     <connections>
                         <segue destination="iwA-v8-Kh1" kind="relationship" relationship="viewControllers" id="cCM-vK-Zx0"/>
                         <segue destination="uQq-11-ApH" kind="relationship" relationship="viewControllers" id="a4k-yl-zat"/>
+                        <segue destination="xEW-Z5-hL6" kind="relationship" relationship="viewControllers" id="GUe-Y9-pSN"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4lh-fw-x9s" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -504,6 +533,25 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Cny-ax-MEN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-442.02898550724643" y="226.33928571428569"/>
+        </scene>
+        <!--About-->
+        <scene sceneID="Lf9-Sa-h5L">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="xEW-Z5-hL6" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="About" id="7TG-MY-Ebx"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="7la-xX-lMQ">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="KRP-xp-Wer" kind="relationship" relationship="rootViewController" id="BZL-YD-tR6"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DMw-HN-3Zs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-464" y="1004"/>
         </scene>
     </scenes>
 </document>
