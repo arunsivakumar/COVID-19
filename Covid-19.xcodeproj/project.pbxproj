@@ -59,7 +59,7 @@
 		F406DFF324316D110085D492 /* ImageStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageStore.swift; sourceTree = "<group>"; };
 		F406DFF624316F950085D492 /* PhotoStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoStore.swift; sourceTree = "<group>"; };
 		F406DFF824319FBB0085D492 /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
-		F4BD9BBD2431253C00671CAA /* Flatten Covid-19.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Flatten Covid-19.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F4BD9BBD2431253C00671CAA /* Flatten COVID-19.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Flatten COVID-19.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4BD9BC02431253C00671CAA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F4BD9BC42431253C00671CAA /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		F4BD9BC72431253C00671CAA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -141,7 +141,7 @@
 		F4BD9BBE2431253C00671CAA /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				F4BD9BBD2431253C00671CAA /* Flatten Covid-19.app */,
+				F4BD9BBD2431253C00671CAA /* Flatten COVID-19.app */,
 				F4BD9BD32431253D00671CAA /* Covid-19Tests.xctest */,
 				F4BD9BDE2431253E00671CAA /* Covid-19UITests.xctest */,
 			);
@@ -283,7 +283,7 @@
 			);
 			name = "Covid-19";
 			productName = "Covid-19";
-			productReference = F4BD9BBD2431253C00671CAA /* Flatten Covid-19.app */;
+			productReference = F4BD9BBD2431253C00671CAA /* Flatten COVID-19.app */;
 			productType = "com.apple.product-type.application";
 		};
 		F4BD9BD22431253D00671CAA /* Covid-19Tests */ = {
@@ -594,7 +594,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.arunsivakumar.Covid-19";
-				PRODUCT_NAME = "Flatten Covid-19";
+				PRODUCT_NAME = "Flatten COVID-19";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -612,7 +612,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.arunsivakumar.Covid-19";
-				PRODUCT_NAME = "Flatten Covid-19";
+				PRODUCT_NAME = "Flatten COVID-19";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
