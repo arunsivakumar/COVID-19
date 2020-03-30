@@ -272,45 +272,62 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="37" translatesAutoresizingMaskIntoConstraints="NO" id="lzf-MD-u8S">
-                                <rect key="frame" x="57.5" y="366" width="299" height="164"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zxp-1V-4eK">
-                                        <rect key="frame" x="0.0" y="0.0" width="299" height="30"/>
-                                        <state key="normal" title="API used: https://github.com/novelcovid/api"/>
-                                        <connections>
-                                            <action selector="openAPILink:" destination="KRP-xp-Wer" eventType="touchUpInside" id="9gs-gd-OHN"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eey-kT-G2r">
-                                        <rect key="frame" x="102" y="67" width="95" height="30"/>
-                                        <state key="normal" title="Privacy Policy"/>
-                                        <connections>
-                                            <action selector="openPrivacyPolicy:" destination="KRP-xp-Wer" eventType="touchUpInside" id="ypv-ej-Tqw"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fvk-VE-niU">
-                                        <rect key="frame" x="82" y="134" width="135" height="30"/>
-                                        <state key="normal" title="Terms &amp; Conditions"/>
-                                        <connections>
-                                            <action selector="openTermsAndConditions:" destination="KRP-xp-Wer" eventType="touchUpInside" id="s5P-7w-UdS"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                            </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="About" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Egg-dC-Lvs">
-                                <rect key="frame" x="153" y="147" width="109" height="51"/>
+                                <rect key="frame" x="152.5" y="147" width="109" height="50.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="42"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="98" translatesAutoresizingMaskIntoConstraints="NO" id="0m7-wy-daC">
+                                <rect key="frame" x="57.5" y="321.5" width="299" height="253.5"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="37" translatesAutoresizingMaskIntoConstraints="NO" id="lzf-MD-u8S">
+                                        <rect key="frame" x="82" y="0.0" width="135" height="97"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eey-kT-G2r">
+                                                <rect key="frame" x="20" y="0.0" width="95" height="30"/>
+                                                <state key="normal" title="Privacy Policy"/>
+                                                <connections>
+                                                    <action selector="openPrivacyPolicy:" destination="KRP-xp-Wer" eventType="touchUpInside" id="ypv-ej-Tqw"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fvk-VE-niU">
+                                                <rect key="frame" x="0.0" y="67" width="135" height="30"/>
+                                                <state key="normal" title="Terms &amp; Conditions"/>
+                                                <connections>
+                                                    <action selector="openTermsAndConditions:" destination="KRP-xp-Wer" eventType="touchUpInside" id="s5P-7w-UdS"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="RGW-8k-oDG">
+                                        <rect key="frame" x="0.0" y="195" width="299" height="58.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Credits" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qY4-zJ-ZjJ">
+                                                <rect key="frame" x="0.0" y="0.0" width="55" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zxp-1V-4eK">
+                                                <rect key="frame" x="0.0" y="28.5" width="299" height="30"/>
+                                                <state key="normal" title="API used: https://github.com/novelcovid/api"/>
+                                                <connections>
+                                                    <action selector="openAPILink:" destination="KRP-xp-Wer" eventType="touchUpInside" id="9gs-gd-OHN"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="Egg-dC-Lvs" firstAttribute="centerX" secondItem="lzf-MD-u8S" secondAttribute="centerX" id="5L0-ip-jSz"/>
-                            <constraint firstItem="lzf-MD-u8S" firstAttribute="centerX" secondItem="pTe-ME-E0h" secondAttribute="centerX" id="Z6V-Sm-JMJ"/>
-                            <constraint firstItem="Egg-dC-Lvs" firstAttribute="top" secondItem="UKr-YR-boU" secondAttribute="top" constant="59" id="sg5-qp-4Qp"/>
-                            <constraint firstItem="lzf-MD-u8S" firstAttribute="centerY" secondItem="pTe-ME-E0h" secondAttribute="centerY" id="yt2-Gy-byl"/>
+                            <constraint firstItem="Egg-dC-Lvs" firstAttribute="top" secondItem="UKr-YR-boU" secondAttribute="top" constant="59" id="1G4-cW-Zuy"/>
+                            <constraint firstItem="0m7-wy-daC" firstAttribute="centerX" secondItem="pTe-ME-E0h" secondAttribute="centerX" id="BaA-Mu-7LI"/>
+                            <constraint firstItem="Egg-dC-Lvs" firstAttribute="centerX" secondItem="pTe-ME-E0h" secondAttribute="centerX" id="ETF-sh-Gcb"/>
+                            <constraint firstItem="0m7-wy-daC" firstAttribute="centerY" secondItem="pTe-ME-E0h" secondAttribute="centerY" id="NPu-vu-QDw"/>
+                            <constraint firstItem="Egg-dC-Lvs" firstAttribute="centerX" secondItem="pTe-ME-E0h" secondAttribute="centerX" id="suk-jk-wV8"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="UKr-YR-boU"/>
                     </view>
@@ -496,11 +513,11 @@
             </objects>
             <point key="canvasLocation" x="-1359" y="-97"/>
         </scene>
-        <!--Home-->
+        <!--Navigation Controller-->
         <scene sceneID="HYA-F8-8u7">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="iwA-v8-Kh1" customClass="NavigationController" customModule="Covid_19" customModuleProvider="target" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Home" id="5TS-jL-eWJ"/>
+                    <tabBarItem key="tabBarItem" selectedImage="home" systemItem="featured" id="5TS-jL-eWJ"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="5Uf-ws-hlu">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -515,11 +532,11 @@
             </objects>
             <point key="canvasLocation" x="-442.02898550724643" y="-421.20535714285711"/>
         </scene>
-        <!--Countries-->
+        <!--Navigation Controller-->
         <scene sceneID="KLW-YN-bAq">
             <objects>
                 <navigationController storyboardIdentifier="NavigationController" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="uQq-11-ApH" customClass="NavigationController" customModule="Covid_19" customModuleProvider="target" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Countries" id="TfE-eg-g6o"/>
+                    <tabBarItem key="tabBarItem" selectedImage="country" systemItem="recents" id="TfE-eg-g6o"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Y9X-cT-tX8">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -534,11 +551,11 @@
             </objects>
             <point key="canvasLocation" x="-442.02898550724643" y="226.33928571428569"/>
         </scene>
-        <!--About-->
+        <!--Navigation Controller-->
         <scene sceneID="Lf9-Sa-h5L">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="xEW-Z5-hL6" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="About" id="7TG-MY-Ebx"/>
+                    <tabBarItem key="tabBarItem" selectedImage="about" systemItem="more" id="7TG-MY-Ebx"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="7la-xX-lMQ">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -554,4 +571,9 @@
             <point key="canvasLocation" x="-464" y="1004"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="about" width="32" height="32"/>
+        <image name="country" width="32" height="32"/>
+        <image name="home" width="32" height="32"/>
+    </resources>
 </document>
