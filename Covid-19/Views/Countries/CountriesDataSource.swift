@@ -12,7 +12,7 @@ class CountriesDataSource: NSObject, UITableViewDataSource{
     
     //MARK:- Public API
     
-    let countries: [CountryDataDTO]
+    var countries: [CountryDataDTO]
     let photoStore: PhotoStore
     
     init(countries: [CountryDataDTO], photoStore: PhotoStore) {

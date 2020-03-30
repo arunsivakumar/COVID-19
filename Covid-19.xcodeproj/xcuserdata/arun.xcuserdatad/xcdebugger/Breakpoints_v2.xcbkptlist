@@ -7,65 +7,81 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "63BD454D-96B8-4C73-93D5-5A6B238EBA21"
-            shouldBeEnabled = "No"
+            uuid = "D50DC776-934F-43F6-910B-CB69B78CBB9A"
+            shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Covid-19/Views/Countries/CountriesViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "35"
-            endingLineNumber = "35"
-            landmarkName = "loadData()"
+            startingLineNumber = "62"
+            endingLineNumber = "62"
+            landmarkName = "updateSearchResults(for:)"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "63BD454D-96B8-4C73-93D5-5A6B238EBA21 - 34025bef5b2f2e26"
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Result&lt;Swift.Array&lt;Covid_19.CountryDataDTO&gt;, Swift.Error&gt;) -&gt; () in Covid_19.CountriesViewController.(loadData in _F43474629EB0C592699238A51AEFE725)() -&gt; ()"
-                  moduleName = "Covid-19"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/arun/Documents/Github/Covid-19/Covid-19/Views/Countries/CountriesViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "33"
-                  endingLineNumber = "33"
-                  offsetFromSymbolStart = "337">
-               </Location>
-               <Location
-                  uuid = "63BD454D-96B8-4C73-93D5-5A6B238EBA21 - 34025bef5b2f2e26"
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Result&lt;Swift.Array&lt;Covid_19.CountryDataDTO&gt;, Swift.Error&gt;) -&gt; () in Covid_19.CountriesViewController.(loadData in _F43474629EB0C592699238A51AEFE725)() -&gt; ()"
-                  moduleName = "Covid-19"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/arun/Documents/Github/Covid-19/Covid-19/Views/Countries/CountriesViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "33"
-                  endingLineNumber = "33"
-                  offsetFromSymbolStart = "359">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "3F33C9AA-CBC0-4683-BCC3-006BA3EE7194"
-            shouldBeEnabled = "No"
+            uuid = "8504B321-9F69-4D65-929A-DA368937D63A"
+            shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Covid-19/Views/Countries/CountriesViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "36"
-            endingLineNumber = "36"
-            landmarkName = "loadData()"
+            startingLineNumber = "61"
+            endingLineNumber = "61"
+            landmarkName = "updateSearchResults(for:)"
             landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D65C7FBB-7FD5-4B5F-918B-A35B2723A792"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Covid-19/Views/Countries/CountriesViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "66"
+            endingLineNumber = "66"
+            landmarkName = "updateSearchResults(for:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "D65C7FBB-7FD5-4B5F-918B-A35B2723A792 - 93cf145ae929904c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Covid_19.CountriesViewController.updateSearchResults(for: __C.UISearchController) -&gt; ()"
+                  moduleName = "Covid-19"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/arun/Documents/Github/Covid-19/Covid-19/Views/Countries/CountriesViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "66"
+                  endingLineNumber = "66"
+                  offsetFromSymbolStart = "485">
+               </Location>
+               <Location
+                  uuid = "D65C7FBB-7FD5-4B5F-918B-A35B2723A792 - 71af1726d574279f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Covid_19.CountryDataDTO) -&gt; Swift.Bool in Covid_19.CountriesViewController.updateSearchResults(for: __C.UISearchController) -&gt; ()"
+                  moduleName = "Covid-19"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/arun/Documents/Github/Covid-19/Covid-19/Views/Countries/CountriesViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "67"
+                  endingLineNumber = "67"
+                  offsetFromSymbolStart = "40">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

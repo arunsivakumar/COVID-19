@@ -8,10 +8,11 @@
 
 import UIKit
 
-class CountriesViewController: UIViewController {
+class CountriesViewController: UIViewController, UISearchResultsUpdating {
     
     var store: CovidStore!
     var dataSource: CountriesDataSource?
+    var countries: [CountryDataDTO] = []
     
     @IBOutlet weak var tableView: UITableView!
     override func viewDidLoad() {
@@ -27,6 +28,16 @@ class CountriesViewController: UIViewController {
         tableView.estimatedRowHeight = 306.0
         tableView.rowHeight = UITableView.automaticDimension
         tableView.separatorStyle = .none
+        
+        let search = UISearchController(searchResultsController: nil)
+        search.searchResultsUpdater = self
+        search.obscuresBackgroundDuringPresentation = false
+        search.searchBar.placeholder = "Type something here to search"
+        if #available(iOS 11.0, *) {
+            navigationItem.searchController = search
+        } else {
+            // Fallback on earlier versions
+        }
     }
     private func loadData() {
         store.getCountriesData { [weak self] (result) in
@@ -40,8 +51,21 @@ class CountriesViewController: UIViewController {
     
     private func updateUI(data: [CountryDataDTO]) {
         //update table view
+        countries = data
         dataSource = CountriesDataSource(countries: data, photoStore: PhotoStore())
         tableView.dataSource = dataSource!
         tableView.reloadData()
+    }
+    
+    func updateSearchResults(for searchController: UISearchController) {
+        guard let text = searchController.searchBar.text, text != "" else {
+             self.dataSource?.countries = countries
+            self.tableView.reloadData()
+            return
+        }
+         self.dataSource?.countries = dataSource?.countries.filter({ (country) -> Bool in
+            country.country.lowercased().contains(text.lowercased())
+         }) ?? []
+        self.tableView.reloadData()
     }
 }
