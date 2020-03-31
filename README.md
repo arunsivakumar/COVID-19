@@ -19,7 +19,7 @@ Users can search affected countries and learn about the virus spread.
 
 ![SCREENSHOT 3](https://github.com/arunsivakumar/covid-19/blob/master/Screenshots/screenshot3.PNG)
 
-### Inspiration by:
+### Inspired by:
 
 https://www.worldometers.info/coronavirus/
 https://github.com/neomjs/covid-dashboard
