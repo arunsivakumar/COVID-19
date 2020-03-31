@@ -21,7 +21,7 @@ Users can search affected countries and learn about the virus spread.
 
 ### Inspired by:
 
-https://www.worldometers.info/coronavirus/
+https://www.worldometers.info/coronavirus/  
 https://github.com/neomjs/covid-dashboard
 
 Build with ❤️ from Singapore.
