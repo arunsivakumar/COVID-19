@@ -9,7 +9,7 @@ Users can search affected countries and learn about the virus spread.
 - [x] Search  
 - [ ] News Feed
 - [ ] Contact Tracing
-= [ ] WHO Facts / News
+- [ ] WHO Facts / News
 
 ### Screenshots:
 
