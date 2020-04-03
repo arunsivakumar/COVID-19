@@ -13,7 +13,7 @@
 		F406DFEC243149490085D492 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F406DFEB243149490085D492 /* Extensions.swift */; };
 		F406DFEE24314EE40085D492 /* CountriesDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = F406DFED24314EE40085D492 /* CountriesDataSource.swift */; };
 		F406DFF024314F110085D492 /* CountryDataDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = F406DFEF24314F110085D492 /* CountryDataDTO.swift */; };
-		F406DFF224314F600085D492 /* ContryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F406DFF124314F600085D492 /* ContryTableViewCell.swift */; };
+		F406DFF224314F600085D492 /* CountryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F406DFF124314F600085D492 /* CountryTableViewCell.swift */; };
 		F406DFF424316D110085D492 /* ImageStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = F406DFF324316D110085D492 /* ImageStore.swift */; };
 		F406DFF724316F950085D492 /* PhotoStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = F406DFF624316F950085D492 /* PhotoStore.swift */; };
 		F406DFF924319FBB0085D492 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F406DFF824319FBB0085D492 /* AboutViewController.swift */; };
@@ -55,7 +55,7 @@
 		F406DFEB243149490085D492 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		F406DFED24314EE40085D492 /* CountriesDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountriesDataSource.swift; sourceTree = "<group>"; };
 		F406DFEF24314F110085D492 /* CountryDataDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryDataDTO.swift; sourceTree = "<group>"; };
-		F406DFF124314F600085D492 /* ContryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContryTableViewCell.swift; sourceTree = "<group>"; };
+		F406DFF124314F600085D492 /* CountryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryTableViewCell.swift; sourceTree = "<group>"; };
 		F406DFF324316D110085D492 /* ImageStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageStore.swift; sourceTree = "<group>"; };
 		F406DFF624316F950085D492 /* PhotoStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoStore.swift; sourceTree = "<group>"; };
 		F406DFF824319FBB0085D492 /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
@@ -245,7 +245,7 @@
 			children = (
 				F406DFE424312FDE0085D492 /* CountriesViewController.swift */,
 				F406DFED24314EE40085D492 /* CountriesDataSource.swift */,
-				F406DFF124314F600085D492 /* ContryTableViewCell.swift */,
+				F406DFF124314F600085D492 /* CountryTableViewCell.swift */,
 			);
 			path = Countries;
 			sourceTree = "<group>";
@@ -404,7 +404,7 @@
 				F406DFE7243135170085D492 /* Networking.swift in Sources */,
 				F406DFF024314F110085D492 /* CountryDataDTO.swift in Sources */,
 				F406DFE524312FDE0085D492 /* CountriesViewController.swift in Sources */,
-				F406DFF224314F600085D492 /* ContryTableViewCell.swift in Sources */,
+				F406DFF224314F600085D492 /* CountryTableViewCell.swift in Sources */,
 				F4BD9BC52431253C00671CAA /* HomeViewController.swift in Sources */,
 				F406DFF424316D110085D492 /* ImageStore.swift in Sources */,
 				F406DFEA24313EB30085D492 /* GlobalDataDTO.swift in Sources */,
