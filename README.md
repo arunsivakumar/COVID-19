@@ -22,4 +22,8 @@ Users can search affected countries and learn about the virus spread.
 https://www.worldometers.info/coronavirus/  
 https://github.com/neomjs/covid-dashboard
 
+### Credits  
+
+https://github.com/novelcovid/api
+
 Build with ❤️ from Singapore.
